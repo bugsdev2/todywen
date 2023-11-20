@@ -65,9 +65,10 @@ function getMeaning(){
 				definitionContainer.className = 'row my-2';
 				item.meanings.forEach(item => {
 					const posDiv = document.createElement('div');
-					posDiv.className = 'fs-5 my-2';
+					posDiv.className = 'fs-5 my-2 fw-bold';
 					posDiv.innerText = item.partOfSpeech;
 					const definitionWord = document.createElement('div');
+					definitionWord.className = 'fw-bold';
 					definitionWord.innerText = 'Definition';
 					const ul = document.createElement('ul');
 					ul.className = 'd-flex flex-column gap-3 ps-5';
