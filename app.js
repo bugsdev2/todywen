@@ -32,7 +32,7 @@ function getMeaning(){
 					audioBtn.addEventListener('click', () => {
 						audioEl.play();
 					});
-					audioBtn.className = 'btn btn-sm btn-light text-dark badge rounded-circle';
+					audioBtn.className = 'btn btn-sm btn-dark text-light badge rounded-circle';
 					audioBtn.setAttribute('id', 'button');
 					var buttonIcon = document.createElement('span');
 					buttonIcon.className = 'bi bi-volume-up-fill';
