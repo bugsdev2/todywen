@@ -1,0 +1,22 @@
+{
+  "name": "todywen",
+  "version": "1.0.0",
+  "description": "A simple dictionary for your everyday needs. In fact, the only one you will ever need.",
+  "main": "index.js",
+  "scripts": {
+    "test": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugsdev2/todywen.git"
+  },
+  "keywords": [
+    "dictionary"
+  ],
+  "author": "bugsdev2",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bugsdev2/todywen/issues"
+  },
+  "homepage": "https://github.com/bugsdev2/todywen#readme"
+}

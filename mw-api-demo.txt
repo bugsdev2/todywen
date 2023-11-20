@@ -1,0 +1,542 @@
+[
+  {
+    "meta": {
+      "id": "cat",
+      "uuid": "c7d33a35-fa9b-435d-afaf-40f8a5ac0dcc",
+      "src": "sch_dict",
+      "section": "abbr",
+      "stems": [
+        "cat"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "cat"
+    },
+    "fl": "abbreviation",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "catalog"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "catalog"
+    ]
+  },
+  {
+    "meta": {
+      "id": "cat",
+      "uuid": "63296bee-2e56-4fc2-9683-1ce67faeaae8",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "cat",
+        "cats",
+        "kat"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "cat",
+      "prs": [
+        {
+          "mw": "ˈkat"
+        }
+      ]
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1 a",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a small flesh-eating mammal long domesticated and kept by humans as a pet or for catching rats and mice"
+                  ]
+                ]
+              }
+            ],
+            [
+              "sense",
+              {
+                "sn": "b",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}an animal (as a lion, tiger, leopard, jaguar, cougar, wildcat, lynx, or cheetah) of the same family as the domestic cat"
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}{sx|cat||}-{sx|o||}'-{sx|nine||}-{sx|tails||}"
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "3",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}{sx|catfish||}"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "et": [
+      [
+        "text",
+        "Old English {it}catt{/it}"
+      ]
+    ],
+    "shortdef": [
+      "a small flesh-eating mammal long domesticated and kept by humans as a pet or for catching rats and mice",
+      "an animal (as a lion, tiger, leopard, jaguar, cougar, wildcat, lynx, or cheetah) of the same family as the domestic cat",
+      "cat-o'-nine-tails"
+    ]
+  },
+  {
+    "meta": {
+      "id": "cat-o'-nine-tails",
+      "uuid": "5fa958c0-5531-47f9-bdf0-7a7319456356",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "cat-o'-nine-tails",
+        "cat-o-nine-tails"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "cat-o'-nine-tails",
+      "prs": [
+        {
+          "mw": "ˌkat-ə-ˈnīn-ˌtālz"
+        }
+      ]
+    },
+    "fl": "noun",
+    "ins": [
+      {
+        "il": "plural",
+        "if": "cat-o'-nine-tails"
+      }
+    ],
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a whip made of nine knotted cords fastened to a handle"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "a whip made of nine knotted cords fastened to a handle"
+    ]
+  },
+  {
+    "meta": {
+      "id": "CAT scan",
+      "uuid": "90ba47d0-986f-4047-9d20-78b82f63af52",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "cat scan",
+        "cat scanning"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "CAT scan",
+      "prs": [
+        {
+          "mw": "ˈkat-",
+          "sound": {
+            "audio": "cat_sc01"
+          }
+        }
+      ]
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}an image made by computed tomography"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "et": [
+      [
+        "text",
+        "{it}c{/it}omputerized {it}a{/it}xial {it}t{/it}omography"
+      ]
+    ],
+    "shortdef": [
+      "an image made by computed tomography"
+    ]
+  },
+  {
+    "meta": {
+      "id": "cat's cradle",
+      "uuid": "d54aa906-5498-4188-9cc9-4334a1665d9e",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "cat's cradle",
+        "cats cradle",
+        "cat's cradles"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "cat's cradle"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a game in which a string looped on the fingers in such a way as to resemble a small cradle is transferred to the hands of another person"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "a game in which a string looped on the fingers in such a way as to resemble a small cradle is transferred to the hands of another person"
+    ]
+  },
+  {
+    "meta": {
+      "id": "cat's-eye",
+      "uuid": "fe616aac-337c-451d-9a78-10a7d5a9aa58",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "cat's-eye",
+        "cats-eye",
+        "cat's-eyes"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "cat's-eye",
+      "prs": [
+        {
+          "mw": "ˈkats-ˌī"
+        }
+      ]
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}any of various gems (as a chrysoberyl or a chalcedony) exhibiting opalescent reflections from within"
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a glass playing marble with a colored area that resembles the eye of a cat"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "any of various gems (as a chrysoberyl or a chalcedony) exhibiting opalescent reflections from within",
+      "a glass playing marble with a colored area that resembles the eye of a cat"
+    ]
+  },
+  {
+    "meta": {
+      "id": "cat's-paw",
+      "uuid": "315078d0-fad6-421b-82b7-42b0a8b2d7cc",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "cat's-paw",
+        "cats-paw",
+        "cat's-paws"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "cat's-paw",
+      "prs": [
+        {
+          "mw": "ˈkats-ˌpȯ"
+        }
+      ]
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a light breeze that ruffles the surface of the water in patches"
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a person used by another person for his or her own ends"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "a light breeze that ruffles the surface of the water in patches",
+      "a person used by another person for his or her own ends"
+    ]
+  },
+  {
+    "meta": {
+      "id": "Abyssinian cat",
+      "uuid": "3e76b6d4-c58c-4171-ae62-aa22767edb9d",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "abyssinian cat"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "Ab*ys*sin*i*an cat",
+      "prs": [
+        {
+          "mw": "ˌab-ə-ˈsin-ē-ən-"
+        },
+        {
+          "mw": "-ˈsin-yən-"
+        }
+      ]
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}any of a breed of medium-sized slender domestic cats of African origin with short usually brownish hair ticked with darker color"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "art": {
+      "artid": "abyssin.tif",
+      "capt": "Abyssinian cat"
+    },
+    "shortdef": [
+      "any of a breed of medium-sized slender domestic cats of African origin with short usually brownish hair ticked with darker color"
+    ]
+  },
+  {
+    "meta": {
+      "id": "alley cat",
+      "uuid": "09956b90-1438-434d-ba3d-7b330bc961d5",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "alley cat",
+        "alley cats"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "alley cat"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a stray cat"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "a stray cat"
+    ]
+  },
+  {
+    "meta": {
+      "id": "Angora cat",
+      "uuid": "01d98277-7dc0-4622-af58-708e6d2a7b08",
+      "src": "sch_dict",
+      "section": "alpha",
+      "stems": [
+        "angora cat",
+        "angora cats"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "Angora cat"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}any of a breed of cats having a long graceful body and silky medium-length hair"
+                  ]
+                ],
+                "sdsense": {
+                  "sd": "also",
+                  "dt": [
+                    [
+                      "text",
+                      "{bc}a long-haired domestic cat"
+                    ]
+                  ]
+                }
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "et": [
+      [
+        "text",
+        "{it}Angora{/it} (Ankara), Turkey"
+      ]
+    ],
+    "shortdef": [
+      "any of a breed of cats having a long graceful body and silky medium-length hair; also : a long-haired domestic cat"
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bi-search {
+	width: 4rem;
+}
+
+#meaning-container {
+	width: 100%;
+	height: 83vh;
+	border-radius: 10px;
+	overflow:auto;
+}
+
+#meaning-container #button {
+/*
+	position: relative;
+	top: -1px;
+*/
+	font-size: 15px;
+	width: 27px;
+	height: 27px;
+}
+
+#button span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#meaning-container ul {
+	list-style: none;
+}
+
+#meaning-container li::before {
+	content: "- "
+}
+
+.head-area {
+	border-bottom: 2px solid grey;
+}
