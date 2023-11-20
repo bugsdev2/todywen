@@ -29,6 +29,9 @@ function getMeaning(){
 					var audioEl = document.createElement('audio');
 					audioEl.src = item.phonetics[0].audio || item.phonetics[1].audio ;
 					var audioBtn = document.createElement('button');
+					audioBtn.addEventListener('click', () => {
+						audioEl.play();
+					});
 					audioBtn.className = 'btn btn-sm btn-dark badge rounded-circle';
 					audioBtn.setAttribute('id', 'button');
 					var buttonIcon = document.createElement('span');
