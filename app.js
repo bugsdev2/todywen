@@ -91,4 +91,9 @@ function getMeaning(){
 			});
 			
 		})
+		.catch(err => {
+			if(err){
+				meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
+			}
+		})
 }

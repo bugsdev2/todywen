@@ -9,16 +9,12 @@ body {
 
 #meaning-container {
 	width: 100%;
-	height: 83vh;
+	height: 80vh;
 	border-radius: 10px;
 	overflow:auto;
 }
 
 #meaning-container #button {
-/*
-	position: relative;
-	top: -1px;
-*/
 	font-size: 15px;
 	width: 27px;
 	height: 27px;
