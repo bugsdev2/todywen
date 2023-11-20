@@ -20,6 +20,7 @@ indent_mode=2
 [project]
 name=todywen
 base_path=/home/bugs/Projects/todywen/
+description=
 
 [long line marker]
 long_line_behaviour=1
@@ -27,9 +28,9 @@ long_line_column=72
 
 [files]
 current_page=2
-FILE_NAME_0=1133;HTML;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Ftodywen%2Findex.html;0;4
+FILE_NAME_0=916;HTML;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Ftodywen%2Findex.html;0;4
 FILE_NAME_1=213;CSS;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Ftodywen%2Fstyle.css;0;4
-FILE_NAME_2=2503;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Ftodywen%2Fapp.js;0;4
+FILE_NAME_2=553;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Ftodywen%2Fapp.js;0;4
 FILE_NAME_3=858;None;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Ftodywen%2Fdict-api-demo.txt;0;4
 
 [VTE]

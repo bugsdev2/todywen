@@ -3,6 +3,8 @@ const searchButton = document.getElementById('search_btn');
 const meaningContainer = document.getElementById('meaning-container');
 
 searchButton.addEventListener('click', getMeaning);
+searchQuery.addEventListener('change', getMeaning);
+
 
 function getMeaning(){
 	meaningContainer.innerText = '';
@@ -88,5 +90,5 @@ function getMeaning(){
 				meaningContainer.appendChild(definitionContainer);
 			});
 			
-		});
+		})
 }
