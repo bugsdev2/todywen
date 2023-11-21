@@ -6,7 +6,7 @@ const suggestionList = document.getElementById('suggestion-list');
 searchButton.addEventListener('click', getMeaning);
 searchQuery.addEventListener('change', getMeaning);
 
-searchQuery.addEventListener('input', getSearchSuggestions);
+searchQuery.addEventListener('keypress', getSearchSuggestions);
 
 function getSearchSuggestions(){
 	suggestionList.innerText = '';
