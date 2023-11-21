@@ -5,7 +5,7 @@ const suggestionList = document.getElementById('suggestion-list');
 
 searchButton.addEventListener('click', getMeaning);
 //~ searchQuery.addEventListener('change', getMeaning);
-document.body.addEventListener('keypress', keyPressed);
+document.body.addEventListener('keydown', keyPressed);
 
 function keyPressed(e){
 	if(e.key === 'Enter'){
@@ -24,7 +24,7 @@ function getSearchSuggestions(){
 		.then(object => {
 			const word_list = Object.keys(object);
 			let searchWord = searchQuery.value.toLowerCase();
-			let regex = new RegExp(`^${searchWord}`, '');
+			let regex = new RegExp(`^${searchWord}`, 'gi');
 			const suggestions = [];
 			for (word of word_list){
 				if(word.match(regex)){
@@ -85,6 +85,7 @@ function getMeaning(){
 				//~ }
 				
 				
+				
 				const title = document.createElement('span');
 				title.className = 'fw-bold fs-2 text-decoration-capitalize';
 				title.innerText = item.word;
@@ -143,7 +144,7 @@ function getMeaning(){
 		.catch(err => {
 			console.log(err);
 			if(err){
-				//~ meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
+				meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
 			}
 		})
 }
