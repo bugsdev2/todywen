@@ -62,23 +62,24 @@ function getMeaning(){
 				const titleDiv = document.createElement('div');
 				titleDiv.className = 'col d-flex justify-content-start align-items-baseline';
 				
-				if(item.phonetics[0].audio || item.phonetics[1].audio){
-					var audioEl = document.createElement('audio');
-					audioEl.src = item.phonetics[0].audio || item.phonetics[1].audio ;
-					var audioBtn = document.createElement('button');
-					audioBtn.addEventListener('click', () => {
-						audioEl.play();
-					});
-					audioBtn.className = 'btn btn-sm btn-dark text-light badge rounded-circle';
-					audioBtn.setAttribute('id', 'button');
-					var buttonIcon = document.createElement('span');
-					buttonIcon.className = 'bi bi-volume-up-fill';
-					audioBtn.appendChild(buttonIcon);
-				}
+				
+				//~ if(item.phonetics[0].audio !== '' || item.phonetics[1].audio !== ''){
+					//~ var audioEl = document.createElement('audio');
+					//~ audioEl.src = item.phonetics[0].audio || item.phonetics[1].audio;
+					//~ var audioBtn = document.createElement('button');
+					//~ audioBtn.addEventListener('click', () => {
+						//~ audioEl.play();
+					//~ });
+					//~ audioBtn.className = 'btn btn-sm btn-dark text-light badge rounded-circle';
+					//~ audioBtn.setAttribute('id', 'button');
+					//~ var buttonIcon = document.createElement('span');
+					//~ buttonIcon.className = 'bi bi-volume-up-fill';
+					//~ audioBtn.appendChild(buttonIcon);
+				//~ }
 				
 				
 				const title = document.createElement('span');
-				title.className = 'fw-bold fs-2 ms-2 text-decoration-capitalize';
+				title.className = 'fw-bold fs-2 text-decoration-capitalize';
 				title.innerText = item.word;
 				if(data.length > 1){					
 					var itemNumber = document.createElement('span');
@@ -86,17 +87,18 @@ function getMeaning(){
 					itemNumber.innerText = index+1;
 				}
 					
-				
-				const phoneticDiv = document.createElement('span');
-				phoneticDiv.className = 'mx-3';
-				phoneticDiv.innerText = item.phonetics[0].text || item.phonetics[1].text;
-				if(item.phonetics[0].audio || item.phonetics[1].audio){
-					titleDiv.appendChild(audioEl);
-					titleDiv.appendChild(audioBtn);	
+				if(item.phonetics.length){
+					var phoneticDiv = document.createElement('span');
+					phoneticDiv.className = 'mx-3';
+					phoneticDiv.innerText = item.phonetic || item.phonetics[0].text || item.phonetics[1].text;	
+					//~ if(item.phonetics[0].audio || item.phonetics[1].audio){
+						//~ titleDiv.appendChild(audioEl);
+						//~ titleDiv.appendChild(audioBtn);	
+					//~ }
 				}
 				titleDiv.appendChild(title);
 				if(data.length>1) titleDiv.appendChild(itemNumber);
-				titleDiv.appendChild(phoneticDiv);
+				if(phoneticDiv) titleDiv.appendChild(phoneticDiv);
 				titleContainer.appendChild(titleDiv);
 				
 				/////////////////////////////////////
@@ -132,6 +134,7 @@ function getMeaning(){
 			suggestionList.style.display = 'none';
 		})
 		.catch(err => {
+			console.log(err);
 			if(err){
 				meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
 			}
