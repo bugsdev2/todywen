@@ -4,7 +4,14 @@ const meaningContainer = document.getElementById('meaning-container');
 const suggestionList = document.getElementById('suggestion-list');
 
 searchButton.addEventListener('click', getMeaning);
-searchQuery.addEventListener('change', getMeaning);
+//~ searchQuery.addEventListener('change', getMeaning);
+document.body.addEventListener('keypress', keyPressed);
+
+function keyPressed(e){
+	if(e.key === 'Enter'){
+		getMeaning();
+	}
+}
 
 searchQuery.addEventListener('keypress', getSearchSuggestions);
 
@@ -136,7 +143,7 @@ function getMeaning(){
 		.catch(err => {
 			console.log(err);
 			if(err){
-				meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
+				//~ meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
 			}
 		})
 }
