@@ -1,10 +1,48 @@
 const searchQuery = document.getElementById('search_query');
 const searchButton = document.getElementById('search_btn');
 const meaningContainer = document.getElementById('meaning-container');
+const suggestionList = document.getElementById('suggestion-list');
 
 searchButton.addEventListener('click', getMeaning);
 searchQuery.addEventListener('change', getMeaning);
 
+searchQuery.addEventListener('keypress', getSearchSuggestions);
+
+function getSearchSuggestions(){
+	suggestionList.innerText = '';
+	fetch('word_list.json')
+		.then(res => {
+			return res.json();
+		})
+		.then(object => {
+			const word_list = Object.keys(object);
+			let searchWord = searchQuery.value.toLowerCase();
+			let regex = new RegExp(`^${searchWord}`, '');
+			const suggestions = [];
+			for (word of word_list){
+				if(word.match(regex)){
+					if(suggestions.length<25){
+						suggestions.push(word);
+					}
+				}
+			}
+			suggestions.map(suggestion => {
+				if(searchQuery.value === '') {
+					suggestionList.style.display = 'none';
+					return;
+				}
+				const li = document.createElement('li');
+				li.innerText = suggestion;
+				li.addEventListener('click', (e) => {
+					searchQuery.value = e.target.innerText;
+					getMeaning(searchQuery.value);
+					suggestionList.style.display = 'none';
+				});
+				suggestionList.appendChild(li);
+				suggestionList.style.display = "block";
+			});
+		});
+}
 
 function getMeaning(){
 	meaningContainer.innerText = '';
@@ -16,7 +54,6 @@ function getMeaning(){
 		})
 		.then(data => {
 			data.forEach((item,index) => {
-				//~ console.log(item);
 				
 				// FOR THE TITLE ITS RELATED ELEMENTS
 				
@@ -64,7 +101,7 @@ function getMeaning(){
 				
 				/////////////////////////////////////
 				
-				// FOR THE MEANINGS
+				//////////////////// FOR THE MEANINGS
 				
 				var definitionContainer = document.createElement('div');
 				definitionContainer.className = 'row my-2';
@@ -87,12 +124,12 @@ function getMeaning(){
 					definitionContainer.appendChild(ul);
 				});
 				
-				///////////////////
+				////////////////////////////////////
 				
 				meaningContainer.appendChild(titleContainer);
 				meaningContainer.appendChild(definitionContainer);
 			});
-			
+			suggestionList.style.display = 'none';
 		})
 		.catch(err => {
 			if(err){
