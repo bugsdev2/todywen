@@ -6,7 +6,7 @@ const suggestionList = document.getElementById('suggestion-list');
 searchButton.addEventListener('click', getMeaning);
 searchQuery.addEventListener('change', getMeaning);
 
-searchQuery.addEventListener('keypress', getSearchSuggestions);
+searchQuery.addEventListener('input', getSearchSuggestions);
 
 function getSearchSuggestions(){
 	suggestionList.innerText = '';
@@ -21,7 +21,7 @@ function getSearchSuggestions(){
 			const suggestions = [];
 			for (word of word_list){
 				if(word.match(regex)){
-					if(suggestions.length<25){
+					if(suggestions.length<8){
 						suggestions.push(word);
 					}
 				}
