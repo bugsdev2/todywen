@@ -12,7 +12,10 @@
    version="1.1"
    id="svg4"
    sodipodi:docname="icon.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="/home/bugs/Projects/todywen/icon.png"
+   inkscape:export-xdpi="6.2399998"
+   inkscape:export-ydpi="6.2399998">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -36,16 +39,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1024"
-     inkscape:window-height="518"
+     inkscape:window-width="1366"
+     inkscape:window-height="700"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.72730985"
-     inkscape:cx="176.59602"
-     inkscape:cy="276.25738"
-     inkscape:window-x="237"
-     inkscape:window-y="88"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.51428573"
+     inkscape:cx="-156.08673"
+     inkscape:cy="286.46577"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg4"
      inkscape:document-rotation="0"
      inkscape:snap-bbox="false"
