@@ -13,7 +13,7 @@ function keyPressed(e){
 	}
 }
 
-searchQuery.addEventListener('keypress', getSearchSuggestions);
+searchQuery.addEventListener('keydown', getSearchSuggestions);
 
 function getSearchSuggestions(){
 	suggestionList.innerText = '';
@@ -38,15 +38,20 @@ function getSearchSuggestions(){
 					suggestionList.style.display = 'none';
 					return;
 				}
-				const li = document.createElement('li');
-				li.innerText = suggestion;
-				li.addEventListener('click', (e) => {
-					searchQuery.value = e.target.innerText;
-					getMeaning(searchQuery.value);
-					suggestionList.style.display = 'none';
-				});
-				suggestionList.appendChild(li);
-				suggestionList.style.display = "block";
+				// to make sure there are not more than one copy of the suggestion list
+				if(suggestionList.children.length < suggestions.length){
+					
+					const li = document.createElement('li');
+					li.innerText = suggestion;
+					li.addEventListener('click', (e) => {
+						searchQuery.value = e.target.innerText;
+						getMeaning(searchQuery.value);
+						suggestionList.style.display = 'none';
+					});
+					suggestionList.appendChild(li);
+					suggestionList.style.display = "block";
+					
+				}
 			});
 		});
 }
