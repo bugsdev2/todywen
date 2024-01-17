@@ -149,7 +149,7 @@ function getMeaning(){
 		.catch(err => {
 			console.log(err);
 			if(err){
-				meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div><br/><div class="h3">${err}</div>`;
+				meaningContainer.innerHTML = `<div class="h3">"${word}" not found in the Dictionary</div>`;
 			}
 		})
 }
