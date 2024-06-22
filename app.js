@@ -23,7 +23,7 @@ function getSearchSuggestions(){
 		})
 		.then(object => {
 			const word_list = Object.keys(object);
-			let searchWord = searchQuery.value.toLowerCase();
+			let searchWord = searchQuery.value.toLowerCase().trim();
 			let regex = new RegExp(`^${searchWord}`, 'gi');
 			const suggestions = [];
 			for (word of word_list){
@@ -58,7 +58,7 @@ function getSearchSuggestions(){
 
 function getMeaning(){
 	meaningContainer.innerText = '';
-	let word = searchQuery.value.toLowerCase()
+	let word = searchQuery.value.toLowerCase().trim();
 	if (word == '') return;
 	fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
 		.then(res => {
